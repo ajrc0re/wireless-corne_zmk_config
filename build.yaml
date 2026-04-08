@@ -8,3 +8,7 @@ include:
     shield: nice_view
   - board: blecorne_right
     shield: nice_view
+  - board: blecorne_left
+    shield: settings_reset
+  - board: blecorne_right
+    shield: settings_reset
