@@ -113,19 +113,19 @@
 
         symb {
             bindings = <
-&tog 7        &kp F1   &kp F2   &kp F3        &kp F4   &kp F5           &kp LS(LPAR)   &kp LS(AMPS)  &kp LS(STAR)      &kp LS(LPAR)   &kp LS(RPAR)  &kp LS(BACKSPACE)
-&trans        &kp F6   &kp F7   &kp F8        &kp F9   &kp F10          &kp LS(LBRC)   &kp LS(DLLR)  &kp LS(PRCNT)     &kp LS(CARET)  &kp LS(RBRC)  &trans
-&kp CAPSLOCK  &kp F11  &kp F12  &kp F13       &kp F14  &kp F15          &kp LS(EQUAL)  &kp LS(EXCL)  &kp LS(AT)        &kp LS(POUND)  &kp LS(BSLH)  &trans
-                                &kp LEFT_GUI  &trans   &kp LC(SPACE)    &trans         &trans        &kp RS(RC(RALT))
+&tog 7        &kp F1   &kp F2   &kp F3       &kp F4     &kp F5       &kp LS(LPAR)   &kp LS(AMPS)  &kp LS(STAR)      &kp LS(LPAR)   &kp LS(RPAR)  &kp LS(BACKSPACE)
+&trans        &kp F6   &kp F7   &kp F8       &kp F9     &kp F10      &kp LS(LBRC)   &kp LS(DLLR)  &kp LS(PRCNT)     &kp LS(CARET)  &kp LS(RBRC)  &trans
+&kp CAPSLOCK  &kp F11  &kp F12  &kp LG(F13)  &kp LG(V)  &kp LG(B)    &kp LS(EQUAL)  &kp LS(EXCL)  &kp LS(AT)        &kp LS(POUND)  &kp LS(BSLH)  &trans
+                                &kp F13      &trans     &kp F14      &trans         &trans        &kp RS(RC(RALT))
             >;
         };
 
         num {
             bindings = <
-&kp GRAVE        &kp LA(BACKSLASH)  &kp LS(LA(UP))        &kp LA(UP)      &kp LS(LA(UP_ARROW))   &kp LC(LA(LS(F)))    &kp LPAR   &kp N7  &kp N8      &kp N9  &kp RPAR  &kp LC(BSPC)
-&trans           &kp LC(LA(DOWN))   &kp LS(LA(LC(LEFT)))  &kp LA(DOWN)    &kp LS(LA(LC(RIGHT)))  &kp LC(F2)           &kp LBKT   &kp N4  &kp N5      &kp N6  &kp RBKT  &trans
-&kp LS(LC(TAB))  &kp F15            &kp F16               &kp F17         &kp F18                &kp F19              &kp EQUAL  &kp N1  &kp N2      &kp N3  &kp BSLH  &trans
-                                                          &kp LEFT_ARROW  &trans                 &kp RIGHT            &trans     &kp N0  &kp PERIOD
+&kp GRAVE        &kp LA(BACKSLASH)  &kp LS(LA(LC(G)))  &kp LA(UP)     &kp LS(LA(UP_ARROW))  &kp LC(LA(LS(F)))    &kp LPAR   &kp N7  &kp N8      &kp N9  &kp RPAR  &kp LC(BSPC)
+&trans           &kp LC(LA(DOWN))   &kp LS(LA(LEFT))   &kp LA(DOWN)   &kp LS(LA(RIGHT))     &kp LC(F2)           &kp LBKT   &kp N4  &kp N5      &kp N6  &kp RBKT  &trans
+&kp LS(LC(TAB))  &kp F15            &kp F16            &kp F17        &kp F18               &kp F19              &kp EQUAL  &kp N1  &kp N2      &kp N3  &kp BSLH  &trans
+                                                       &kp LC(SPACE)  &trans                &kp LA(SPACE)        &trans     &kp N0  &kp PERIOD
             >;
         };
 
