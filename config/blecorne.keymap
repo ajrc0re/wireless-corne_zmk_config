@@ -134,7 +134,7 @@
 &kp LS(UP)                   &kp HOME      &kp LC(LEFT)      &kp UP        &kp LC(RIGHT)      &kp END          &msc SCRL_UP                  &msc SCRL_LEFT  &mmv MOVE_UP                   &msc SCRL_RIGHT  &mkp MB5              &kp DEL
 &kp LS(LA(LC(RIGHT_ARROW)))  &kp LS(LEFT)  &kp LEFT          &kp DOWN      &kp RIGHT          &kp LS(RIGHT)    &msc SCRL_DOWN                &mmv MOVE_LEFT  &mmv MOVE_DOWN                 &mmv MOVE_RIGHT  &mkp MB4              &trans
 &kp LS(LC(LA(LEFT)))         &kp LS(HOME)  &kp LS(LC(LEFT))  &kp LS(DOWN)  &kp LS(LC(RIGHT))  &kp LS(END)      &kp LG(R)                     &mkp LCLK       &mkp MCLK                      &mkp RCLK        &kp LS(LC(LA(APOS)))  &sk LA(LC(LEFT_SHIFT))
-                                                             &kp PAGE_UP   &kp PAGE_DOWN      &trans           &kp LS(LC(LA(LEFT_BRACKET)))  &trans          &kp LS(LC(LA(RIGHT_BRACKET)))
+                                                             &kp LS(TAB)   &kp TAB            &trans           &kp LS(LC(LA(LEFT_BRACKET)))  &trans          &kp LS(LC(LA(RIGHT_BRACKET)))
             >;
         };
 
