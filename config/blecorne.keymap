@@ -87,14 +87,14 @@
         wa1: wa1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DOT &kp POUND &kp LPAR &kp LS(W) &kp Z &kp R &kp LS(Z) &kp PIPE &kp M &kp LS(G) &kp EQUAL &kp BSLH>;
+            bindings = <&kp PRCNT &kp LS(P) &kp LS(H) &kp LS(S) &kp COMMA &kp LS(I) &kp O &kp LS(F) &kp PLUS &kp LS(P) &kp N2 &kp LS(P)>;
             label = "WA1";
         };
 
         wa2: wa2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(Z) &kp K &kp J &kp LS(E) &kp LBRC &kp T &kp POUND &kp D &kp N9 &kp LT &kp LS(J) &kp Z>;
+            bindings = <&kp N7 &kp G &kp A &kp LT &kp P &kp N &kp R &kp MINUS &kp F &kp N &kp AT &kp LS(M)>;
             label = "WA2";
         };
     };
@@ -140,37 +140,37 @@
 
         func {
             bindings = <
-&trans  &kp PAUSE_BREAK  &kp F7  &kp F8  &kp F9  &kp F10    &kp LS(LC(Y))    &kp LS(LC(U))  &kp LS(LC(I))             &kp LS(LC(O))       &kp LS(LC(P))      &kp LS(LC(BACKSPACE))
-&trans  &kp KP_NUMLOCK   &kp F4  &kp F5  &kp F6  &kp F11    &kp LS(LC(H))    &kp LS(LC(J))  &kp LS(LC(K))             &kp LS(LC(L))       &kp LS(LC(COLON))  &trans
-&trans  &kp SCROLLLOCK   &kp F1  &kp F2  &kp F3  &kp F12    &kp LS(LC(N))    &kp LS(LC(M))  &kp LS(LC(COMMA))         &kp LS(LC(PERIOD))  &kp LS(LC(FSLH))   &kp LS(LC(BSLH))
-                                 &trans  &trans  &trans     &kp PRINTSCREEN  &trans         &kp LS(LC(SINGLE_QUOTE))
+&kp PAUSE_BREAK  &kp N1     &kp N2     &kp N3     &kp N4    &kp N5      &kp LS(LC(Y))    &kp LS(LC(U))  &kp LS(LC(I))             &kp LS(LC(O))       &kp LS(LC(P))      &kp LS(LC(BACKSPACE))
+&kp KP_NUMLOCK   &kp N6     &kp N7     &kp N8     &kp N9    &kp N0      &kp LS(LC(H))    &kp LS(LC(J))  &kp LS(LC(K))             &kp LS(LC(L))       &kp LS(LC(COLON))  &trans
+&kp SCROLLLOCK   &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH    &kp LS(LC(N))    &kp LS(LC(M))  &kp LS(LC(COMMA))         &kp LS(LC(PERIOD))  &kp LS(LC(FSLH))   &kp LS(LC(BSLH))
+                                       &kp LCTRL  &kp LGUI  &kp LALT    &kp PRINTSCREEN  &trans         &kp LS(LC(SINGLE_QUOTE))
             >;
         };
 
         sec {
             bindings = <
-&studio_unlock  &none  &kp LC(LS(ESC))  &kp LA(LC(DELETE))  &kp LG(L)  &none        &none  &pr1    &pr2   &u1    &none  &studio_unlock
-&trans          &none  &none            &none               &none      &none        &none  &wa1    &wa2   &u2    &none  &trans
-&bootloader     &none  &none            &none               &none      &none        &none  &none   &none  &none  &none  &none
-                                        &none               &trans     &soft_off    &none  &trans  &none
+&soft_off    &none           &kp LC(LS(ESC))  &kp LA(LC(DELETE))  &kp LG(L)  &none    &none  &pr1    &pr2   &u1    &none           &soft_off
+&trans       &studio_unlock  &none            &none               &none      &none    &none  &wa1    &wa2   &u2    &studio_unlock  &trans
+&bootloader  &none           &none            &none               &none      &none    &none  &none   &none  &none  &none           &bootloader
+                                              &none               &trans     &none    &none  &trans  &none
             >;
         };
 
         utl {
             bindings = <
-&studio_unlock  &none         &none         &none         &none         &none           &kp LS(LC(LA(Y)))  &kp LS(LC(LA(U)))  &kp LS(LC(LA(I)))      &kp LS(LC(LA(O)))       &kp LS(LC(LA(P)))      &studio_unlock
-&bt BT_CLR_ALL  &none         &out OUT_BLE  &out OUT_TOG  &out OUT_USB  &none           &kp LS(LC(LA(H)))  &kp LS(LC(LA(J)))  &kp LS(LC(LA(K)))      &kp LS(LC(LA(L)))       &kp LS(LC(LA(COLON)))  &trans
-&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LS(LC(LA(N)))  &kp LS(LC(LA(M)))  &kp LS(LC(LA(COMMA)))  &kp LS(LC(LA(PERIOD)))  &kp LS(LC(LA(SLASH)))  &bootloader
-                                            &none         &trans        &none           &soft_off          &trans             &none
+&soft_off       &none           &none         &none         &none         &none           &kp LS(LC(LA(Y)))  &kp LS(LC(LA(U)))  &kp LS(LC(LA(I)))      &kp LS(LC(LA(O)))       &kp LS(LC(LA(P)))      &soft_off
+&bt BT_CLR_ALL  &studio_unlock  &out OUT_BLE  &out OUT_TOG  &out OUT_USB  &none           &kp LS(LC(LA(H)))  &kp LS(LC(LA(J)))  &kp LS(LC(LA(K)))      &kp LS(LC(LA(L)))       &studio_unlock         &trans
+&bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LS(LC(LA(N)))  &kp LS(LC(LA(M)))  &kp LS(LC(LA(COMMA)))  &kp LS(LC(LA(PERIOD)))  &kp LS(LC(LA(SLASH)))  &bootloader
+                                              &none         &trans        &none           &none              &trans             &none
             >;
         };
 
         num_word {
             bindings = <
-&tog 7  &tog 7  &kp N7  &kp N8   &kp N9  &kp LS(STAR)    &tog 7  &tog 7  &tog 7  &tog 7  &tog 7  &tog 7
-&tog 7  &tog 7  &kp N4  &kp N5   &kp N6  &kp LS(PLUS)    &tog 7  &tog 7  &tog 7  &tog 7  &tog 7  &tog 7
-&tog 7  &tog 7  &kp N1  &kp N2   &kp N3  &kp FSLH        &tog 7  &tog 7  &tog 7  &tog 7  &tog 7  &tog 7
-                        &kp DOT  &kp N0  &kp MINUS       &tog 7  &tog 7  &tog 7
+&tog 7  &kp KP_NUMLOCK  &kp N7  &kp N8   &kp N9  &kp KP_MULTIPLY    &tog 7  &tog 7  &tog 7  &tog 7  &tog 7  &tog 7
+&tog 7  &kp KP_CLEAR    &kp N4  &kp N5   &kp N6  &kp KP_PLUS        &tog 7  &tog 7  &tog 7  &tog 7  &tog 7  &tog 7
+&tog 7  &kp KP_DIVIDE   &kp N1  &kp N2   &kp N3  &kp KP_MINUS       &tog 7  &tog 7  &tog 7  &tog 7  &tog 7  &tog 7
+                                &kp DOT  &kp N0  &kp SPACE          &tog 7  &tog 7  &tog 7
             >;
         };
     };
